@@ -1,5 +1,6 @@
-import { stepOneMock } from "@/mocks/stepMocks";
+import { dmpModuleMock, stepOneMock } from "@/mocks/stepMocks";
 
-export function getNextStep(currentStep: string) {
-  return stepOneMock;
-}
+// function to get step data from current step dmpModuleMock
+export const getStepData = (step: number) => {
+  return dmpModuleMock.steps[step - 1];
+};
