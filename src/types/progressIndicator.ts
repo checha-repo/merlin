@@ -1,4 +1,6 @@
-export type ProgressIndicatorProps = {
+import { StepProps } from "./stepProps";
+
+export type StepsIndicatorProps = {
   currentStep: number;
-  totalSteps: number;
+  steps: StepProps[];
 };

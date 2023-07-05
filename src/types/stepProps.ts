@@ -3,4 +3,5 @@ export interface StepProps {
   previousStep?: number;
   amountOfSteps: number;
   currentStep: number;
+  subtitle?: string;
 }
